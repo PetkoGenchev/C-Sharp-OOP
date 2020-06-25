@@ -20,15 +20,15 @@
 
             if (this.Grade >= 5.00)
             {
-                student += "Excellent student.";
+                student += " Excellent student.";
             }
             else if (this.Grade < 5.00 && this.Grade >= 3.50)
             {
-                student += "Average student.";
+                student += " Average student.";
             }
             else
             {
-                student += "Very nice person.";
+                student += " Very nice person.";
             }
             return student;
         }
