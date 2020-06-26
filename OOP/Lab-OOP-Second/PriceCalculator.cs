@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lab_OOP_Second
 {
-    public class PriceCalculator
+    public static class PriceCalculator
     {
 
         public static decimal GetTotalPrice(

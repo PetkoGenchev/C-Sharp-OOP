@@ -25,9 +25,6 @@ namespace Lab_OOP_Second
                 discount = entry[3];
             }
 
-            var calculator = new PriceCalculator();
-
-
             decimal totalPrice = PriceCalculator.GetTotalPrice(perDay,
             countOfDays,
             Enum.Parse<Season>(season),
