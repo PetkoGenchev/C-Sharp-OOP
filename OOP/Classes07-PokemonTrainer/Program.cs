@@ -1,4 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Dynamic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Globalization;
 
 namespace Classes07_PokemonTrainer
 {
@@ -6,7 +12,22 @@ namespace Classes07_PokemonTrainer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true)
+            {
+                var inputData = Console.ReadLine()
+                    .Split()
+                    .ToArray();
+
+                if (inputData[0] == "Tournament")
+                {
+                    break;
+                }
+
+
+
+
+            }
+
         }
     }
 }
