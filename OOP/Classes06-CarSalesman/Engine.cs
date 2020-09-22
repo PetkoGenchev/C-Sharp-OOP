@@ -46,9 +46,9 @@ namespace Classes06_CarSalesman
 
             sb
                 .AppendLine($"{this.Model}:")
-                .AppendLine($"  Power: {this.Power}:")
-                .AppendLine($"  Displacement: {discplacing}")
-                .AppendLine($"  Efficiency: {efficient}");
+                .AppendLine($"    Power: {this.Power}")
+                .AppendLine($"    Displacement: {discplacing}")
+                .AppendLine($"    Efficiency: {efficient}");
 
             return sb.ToString().TrimEnd();
         }

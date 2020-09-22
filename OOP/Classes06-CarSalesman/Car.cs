@@ -52,9 +52,9 @@ namespace Classes06_CarSalesman
 
             sb
                 .AppendLine($"{this.Model}:")
-                .AppendLine($"  {this.engine}:")
-                .AppendLine($"Weight: {weighting}")
-                .AppendLine($"Color: {coloring}");
+                .AppendLine($"  {this.engine}")
+                .AppendLine($"  Weight: {weighting}")
+                .AppendLine($"  Color: {coloring}");
 
             return sb.ToString().TrimEnd();
         }

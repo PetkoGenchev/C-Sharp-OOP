@@ -72,7 +72,54 @@ namespace Classes06_CarSalesman
                 var inputCars = Console.ReadLine()
                 .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                 .ToArray();
+
+
+                Car car = null;
+
+                string model = inputCars[0];
+                Engine engine = hashEngines.First(e => e.Model == inputCars[1]);
+
+                if (inputCars.Length == 4)
+                {
+                    int weight = int.Parse(inputCars[2]);
+                    string color = inputCars[3];
+
+                    car = new Car(model, engine, weight, color);
+                }
+                else if (inputCars.Length == 2)
+                {
+                    car = new Car(model, engine);
+                }
+                else if (inputCars.Length == 3)
+                {
+                    int weight;
+
+                    bool isItWeight = int.TryParse(inputCars[2], out weight);
+
+                    // We try to parse as INT to see if it is the right varuable, if it doesnt work, it is the other one
+
+                    if (isItWeight)
+                    {
+                        car = new Car(model, engine, weight);
+                    }
+                    else
+                    {
+                        car = new Car(model, engine, inputCars[2]);
+                    }
+
+                }
+
+                listOfCars.Add(car);
+
             }
+
+            foreach (var item in listOfCars)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
 
         }
     }
