@@ -24,7 +24,10 @@ namespace Classes07_PokemonTrainer
                 }
 
 
-
+                var trName = inputData[0];
+                var pokeName = inputData[1];
+                var pokeElem = inputData[2];
+                var pokeHealth = int.Parse(inputData[3]);
 
             }
 

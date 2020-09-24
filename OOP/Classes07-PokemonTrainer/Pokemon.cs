@@ -9,6 +9,7 @@ namespace Classes07_PokemonTrainer
         public string Name { get; set; }
         public string Element { get; set; }
         public int Health { get; set; }
+        public Trainer trainerName { get; set; }
 
 
         public Pokemon(string name, string element, int health)
@@ -18,5 +19,10 @@ namespace Classes07_PokemonTrainer
             this.Health = health;
         }
 
+        public Pokemon(string name, string element, int health, Trainer trainer)
+            :this(name,element,health)
+        {
+            this.trainerName = trainer;
+        }
     }
 }

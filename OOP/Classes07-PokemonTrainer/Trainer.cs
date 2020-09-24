@@ -9,7 +9,7 @@ namespace Classes07_PokemonTrainer
         public string Name { get; set; }
         public int NumberOfBadges { get; set; }
 
-        public int MyProperty { get; set; }
+        public int PokemonCollection { get; set; }
 
     }
 }
