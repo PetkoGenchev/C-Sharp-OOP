@@ -8,8 +8,16 @@ namespace Classes07_PokemonTrainer
     {
         public string Name { get; set; }
         public int NumberOfBadges { get; set; }
+        public Pokemon[] pokemon { get; set; }
 
-        public int PokemonCollection { get; set; }
+
+        public Trainer(string name,int numberOfBadge, Pokemon[] pokemons)
+        {
+            this.Name = name;
+            this.NumberOfBadges = numberOfBadge;
+            this.pokemon = pokemons;
+
+        }
 
     }
 }

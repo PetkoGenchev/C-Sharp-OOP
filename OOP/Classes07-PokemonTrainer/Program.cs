@@ -12,6 +12,9 @@ namespace Classes07_PokemonTrainer
     {
         static void Main(string[] args)
         {
+
+            var dictionary = new Dictionary<string, List<Pokemon>>();
+
             while (true)
             {
                 var inputData = Console.ReadLine()
@@ -24,10 +27,47 @@ namespace Classes07_PokemonTrainer
                 }
 
 
-                var trName = inputData[0];
-                var pokeName = inputData[1];
-                var pokeElem = inputData[2];
-                var pokeHealth = int.Parse(inputData[3]);
+                string trainerName = inputData[0];
+                string pokemonName = inputData[1];
+                string pokemonElem = inputData[2];
+                int pokemonHealth = int.Parse(inputData[3]);
+
+                var pokemon = new Pokemon(pokemonName, pokemonElem, pokemonHealth);
+
+                if (!dictionary.ContainsKey(trainerName))
+                {
+                    dictionary.Add(trainerName, new List<Pokemon>());
+                }
+
+                dictionary[trainerName].Add(pokemon);
+
+
+
+
+            }
+
+
+
+            while (true)
+            {
+                var tournamentData = Console.ReadLine();
+
+                if (tournamentData == "End")
+                {
+                    break;
+                }
+                else if (tournamentData == "Fire")
+                {
+
+                }
+                else if (tournamentData == "Water")
+                {
+
+                }
+                else if (tournamentData == "Electricity")
+                {
+
+                }
 
             }
 
