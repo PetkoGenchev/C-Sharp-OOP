@@ -10,10 +10,10 @@ namespace Classes07_PokemonTrainer
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
-            var dictionary = new Dictionary<string, List<Pokemon>>();
+            var dictionary = new Dictionary<string, Trainer>();
 
             while (true)
             {
@@ -36,13 +36,10 @@ namespace Classes07_PokemonTrainer
 
                 if (!dictionary.ContainsKey(trainerName))
                 {
-                    dictionary.Add(trainerName, new List<Pokemon>());
+                    dictionary.Add(trainerName, new Trainer(trainerName));
                 }
 
-                dictionary[trainerName].Add(pokemon);
-
-
-
+                dictionary[trainerName].pokemon.Add(pokemon);
 
             }
 
@@ -58,16 +55,49 @@ namespace Classes07_PokemonTrainer
                 }
                 else if (tournamentData == "Fire")
                 {
-
+                    TrainerChecking(dictionary, tournamentData);
                 }
                 else if (tournamentData == "Water")
                 {
-
+                    TrainerChecking(dictionary, tournamentData);
                 }
                 else if (tournamentData == "Electricity")
                 {
-
+                    TrainerChecking(dictionary, tournamentData);
                 }
+
+            }
+
+
+            foreach (Trainer item in dictionary.Values.OrderByDescending( b =>b.NumberOfBadges))
+            {
+                Console.WriteLine(item);
+            }
+
+
+            static void TrainerChecking(Dictionary<string,Trainer> trainers, string tournamentData)
+            {
+                foreach (var item in trainers.Values)
+                {
+                    if (item.pokemon.Any(x => x.Element == tournamentData))
+                    {
+                        item.NumberOfBadges++;
+                    }
+                    else
+                    {
+                        for (int i = 0; i < item.pokemon.Count; i++)
+                        {
+                            item.pokemon[i].Health -= 10;
+
+                            if (item.pokemon[i].Health <= 0)
+                            {
+                                item.pokemon.RemoveAt(i);
+                                i--;
+                            }
+                        }
+                    }
+                }
+
 
             }
 
