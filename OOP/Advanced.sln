@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes04-SpeedRacing", "Cl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes05-RawData", "Classes05\Classes05-RawData.csproj", "{5F13A051-CB5A-4722-9BDC-B218C17ABEC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes06-CarSalesman", "Classes06-CarSalesman\Classes06-CarSalesman.csproj", "{8D7DDA72-FCE4-42A6-BA7B-45F47BB4ED66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes06-CarSalesman", "Classes06-CarSalesman\Classes06-CarSalesman.csproj", "{8D7DDA72-FCE4-42A6-BA7B-45F47BB4ED66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes07-PokemonTrainer", "Classes07-PokemonTrainer\Classes07-PokemonTrainer.csproj", "{8646AF56-F142-404A-AB84-4A42B13AB2FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes07-PokemonTrainer", "Classes07-PokemonTrainer\Classes07-PokemonTrainer.csproj", "{8646AF56-F142-404A-AB84-4A42B13AB2FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsLab01", "GenericsLab01\GenericsLab01.csproj", "{23595141-600F-4BD1-8469-D9305DF9DC20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsLab02", "GenericsLab02\GenericsLab02.csproj", "{75D161BA-126D-4FB8-8166-9237F6E5A133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsLab03", "GenericsLab03\GenericsLab03.csproj", "{08CDA930-3624-451E-AD08-F496BDEA9F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{8646AF56-F142-404A-AB84-4A42B13AB2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8646AF56-F142-404A-AB84-4A42B13AB2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8646AF56-F142-404A-AB84-4A42B13AB2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23595141-600F-4BD1-8469-D9305DF9DC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23595141-600F-4BD1-8469-D9305DF9DC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23595141-600F-4BD1-8469-D9305DF9DC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23595141-600F-4BD1-8469-D9305DF9DC20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D161BA-126D-4FB8-8166-9237F6E5A133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D161BA-126D-4FB8-8166-9237F6E5A133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D161BA-126D-4FB8-8166-9237F6E5A133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D161BA-126D-4FB8-8166-9237F6E5A133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08CDA930-3624-451E-AD08-F496BDEA9F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08CDA930-3624-451E-AD08-F496BDEA9F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08CDA930-3624-451E-AD08-F496BDEA9F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08CDA930-3624-451E-AD08-F496BDEA9F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
