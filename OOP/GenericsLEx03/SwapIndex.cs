@@ -6,13 +6,34 @@ namespace GenericsLEx03
 {
     public class SwapIndex<T>
     {
-        public T listItem { get; set; }
 
-        public SwapIndex(T listItem)
+        public List<T> ListOfData { get; set; }
+
+        public SwapIndex(List<T> value)
         {
-            this.listItem = listItem;
+            this.ListOfData = value;
         }
 
+
+        public void Swap(List<T> items, int firstIndex, int secondIndex)
+        {
+            T temp = items[firstIndex];
+            items[firstIndex] = items[secondIndex];
+            items[secondIndex] = temp;
+        }
+
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var item in this.ListOfData)
+            {
+                sb.AppendLine($"{item.GetType()}: {item}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
 
     }
 }
