@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsLab03", "GenericsLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsLEx01", "GenericsEx01\GenericsLEx01.csproj", "{BCBAEF6C-12AF-44C0-AEA7-FF67EF079B4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsLEx02", "GenericsLEx02\GenericsLEx02.csproj", "{7CF47B59-DDD5-4DCB-B148-88E15B087E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsLEx02", "GenericsLEx02\GenericsLEx02.csproj", "{7CF47B59-DDD5-4DCB-B148-88E15B087E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsLEx03", "GenericsLEx03\GenericsLEx03.csproj", "{8309CDEB-3A7F-4052-8BFD-708A49859D03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsLEx03", "GenericsLEx03\GenericsLEx03.csproj", "{8309CDEB-3A7F-4052-8BFD-708A49859D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsLEx04", "GenericsLEx04\GenericsLEx04.csproj", "{DAD9F7D5-C263-41C3-999D-37CB3527C883}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{8309CDEB-3A7F-4052-8BFD-708A49859D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8309CDEB-3A7F-4052-8BFD-708A49859D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8309CDEB-3A7F-4052-8BFD-708A49859D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD9F7D5-C263-41C3-999D-37CB3527C883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD9F7D5-C263-41C3-999D-37CB3527C883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD9F7D5-C263-41C3-999D-37CB3527C883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD9F7D5-C263-41C3-999D-37CB3527C883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

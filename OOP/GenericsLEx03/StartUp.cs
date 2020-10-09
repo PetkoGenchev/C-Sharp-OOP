@@ -9,20 +9,20 @@ namespace GenericsLEx03
     {
         static void Main(string[] args)
         {
-            List<string> names = new List<string>();
+            List<int> names = new List<int>();
 
             int n = int.Parse(Console.ReadLine());
 
 
             for (int i = 0; i < n; i++)
             {
-                var input = Console.ReadLine();
+                var input = int.Parse(Console.ReadLine());
 
                 names.Add(input);
 
             }
 
-            SwapIndex<string> swapIndex = new SwapIndex<string>(names);
+            SwapIndex<int> swapIndex = new SwapIndex<int>(names);
 
             var indexToSwap = Console.ReadLine()
                 .Split()
