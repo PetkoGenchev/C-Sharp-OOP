@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsLEx05", "GenericsLE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorsAndComparatorsLab01", "IteratorsAndComparatorsLab01\IteratorsAndComparatorsLab01.csproj", "{C9DBC09F-9A54-46F6-81D8-6CB06C716BA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorsAndComparatorsTasks01", "IteratorsAndComparatorsTasks01\IteratorsAndComparatorsTasks01.csproj", "{7A5C5BB4-994F-45EC-8CE9-9D750B718E7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorsAndComparatorsTasks01", "IteratorsAndComparatorsTasks01\IteratorsAndComparatorsTasks01.csproj", "{7A5C5BB4-994F-45EC-8CE9-9D750B718E7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorsAndComparatorsTasks02", "IteratorsAndComparatorsTasks02\IteratorsAndComparatorsTasks02.csproj", "{7091F176-6893-43EC-BC62-EF877FDC3ED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorsAndComparatorsTasks03", "IteratorsAndComparatorsTasks03\IteratorsAndComparatorsTasks03.csproj", "{2AA79F71-295A-4CC3-BA61-5FFB007E46E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,14 @@ Global
 		{7A5C5BB4-994F-45EC-8CE9-9D750B718E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A5C5BB4-994F-45EC-8CE9-9D750B718E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A5C5BB4-994F-45EC-8CE9-9D750B718E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7091F176-6893-43EC-BC62-EF877FDC3ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7091F176-6893-43EC-BC62-EF877FDC3ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7091F176-6893-43EC-BC62-EF877FDC3ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7091F176-6893-43EC-BC62-EF877FDC3ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AA79F71-295A-4CC3-BA61-5FFB007E46E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA79F71-295A-4CC3-BA61-5FFB007E46E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA79F71-295A-4CC3-BA61-5FFB007E46E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA79F71-295A-4CC3-BA61-5FFB007E46E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

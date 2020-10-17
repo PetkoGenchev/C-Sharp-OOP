@@ -52,6 +52,15 @@ namespace IteratorsAndComparatorsTasks01
                 {
                     listIterator.Print(listOfData, indexToUse);
                 }
+                else if (inputCommand == "PrintAll")
+                {
+                    foreach (var item in listIterator)
+                    {
+                        Console.Write($"{item} ");
+                    }
+                    Console.WriteLine("");
+                }
+
             }
 
         }
