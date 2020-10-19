@@ -15,6 +15,7 @@ namespace IteratorsAndComparatorsTasks03
 
             Lake lake = new Lake(inputArray);
 
+            Console.WriteLine(string.Join(", ", lake));
         }
     }
 }
