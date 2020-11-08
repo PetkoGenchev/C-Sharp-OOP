@@ -45,8 +45,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorsAndComparatorsTask
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XexamAdvanced01", "xExamAdvanced01\XexamAdvanced01.csproj", "{04260E56-4E19-427B-9D49-F369590BECD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XexamAdvanced02", "XexamAdvanced02\XexamAdvanced02.csproj", "{9610B9C1-96C8-4601-9840-55148FE63348}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,10 +135,6 @@ Global
 		{04260E56-4E19-427B-9D49-F369590BECD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04260E56-4E19-427B-9D49-F369590BECD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04260E56-4E19-427B-9D49-F369590BECD4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9610B9C1-96C8-4601-9840-55148FE63348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9610B9C1-96C8-4601-9840-55148FE63348}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9610B9C1-96C8-4601-9840-55148FE63348}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9610B9C1-96C8-4601-9840-55148FE63348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

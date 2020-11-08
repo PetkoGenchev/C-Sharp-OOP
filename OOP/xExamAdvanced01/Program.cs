@@ -86,37 +86,26 @@ namespace xExamAdvanced01
 
                 if (daturaBomb >= 3 && cherryBomb >= 3 && smokeDecoyBomb >= 3)
                 {
-
-
-                    if (queueInput.Any())
-                    {
-                         queueStringRemaining = string.Join(", ", queueInput);
-                    }
-                    else
-                    {
-                        queueStringRemaining = "empty";
-                    }
-
-                    if (stackInput.Any())
-                    {
-                        stackStringRemaining = string.Join(", ", stackInput);
-                    }
-                    else
-                    {
-                        stackStringRemaining = "empty";
-                    }
+                    CheckIfQueueAndStackAreEmpty(stackInput, queueInput, out queueStringRemaining, out stackStringRemaining);
 
                     Console.WriteLine("Bene! You have successfully filled the bomb pouch!");
-                    Console.WriteLine($"Bomb Effects: {queueStringRemaining}");
-                    Console.WriteLine($"Bomb Casings: {stackStringRemaining}");
-                    Console.WriteLine($"Cherry Bombs: {cherryBomb}");
-                    Console.WriteLine($"Datura Bombs: {daturaBomb}");
-                    Console.WriteLine($"Smoke Decoy Bombs: {smokeDecoyBomb}");
+                    PrintingEnd(queueStringRemaining, stackStringRemaining, daturaBomb, cherryBomb, smokeDecoyBomb);
                     return;
                 }
 
             }
 
+            CheckIfQueueAndStackAreEmpty(stackInput, queueInput, out queueStringRemaining, out stackStringRemaining);
+
+            Console.WriteLine("You don't have enough materials to fill the bomb pouch.");
+            PrintingEnd(queueStringRemaining, stackStringRemaining, daturaBomb, cherryBomb, smokeDecoyBomb);
+
+        }
+
+
+
+        private static void CheckIfQueueAndStackAreEmpty(Stack<int> stackInput, Queue<int> queueInput, out string queueStringRemaining, out string stackStringRemaining)
+        {
             if (queueInput.Any())
             {
                 queueStringRemaining = string.Join(", ", queueInput);
@@ -134,16 +123,17 @@ namespace xExamAdvanced01
             {
                 stackStringRemaining = "empty";
             }
+        }
 
-            Console.WriteLine("You don't have enough materials to fill the bomb pouch.");
+
+
+        private static void PrintingEnd(string queueStringRemaining, string stackStringRemaining, int daturaBomb, int cherryBomb, int smokeDecoyBomb)
+        {
             Console.WriteLine($"Bomb Effects: {queueStringRemaining}");
             Console.WriteLine($"Bomb Casings: {stackStringRemaining}");
             Console.WriteLine($"Cherry Bombs: {cherryBomb}");
             Console.WriteLine($"Datura Bombs: {daturaBomb}");
             Console.WriteLine($"Smoke Decoy Bombs: {smokeDecoyBomb}");
-
-
-
         }
     }
 }
